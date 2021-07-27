@@ -1,55 +1,69 @@
-document.addEventListener('DOMContentLoaded',function(event){
-    // array with texts to type in typewriter
-    var dataText = [ "SANDAN DEVELOPERS ...", "What do we Deal in?", "We deal with Web Design", "Mobile Development","Graphic Design","Photography","and Event Management","For any business and queries you can call or whatsapp us today via:","+254 704 035262 or +254 768 286185","Or get in touch with us via email through","sandandevelopers@gmail.com"];
-    
-    // type one text in the typwriter
-    // keeps calling itself until the text is finished
-    function typeWriter(text, i, fnCallback) {
-      // chekc if text isn't finished yet
-      if (i < (text.length)) {
-        // add next character to h1
-       document.querySelector("#tw").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-  
-        // wait for a while and call this function again for next character
-        setTimeout(function() {
-          typeWriter(text, i + 1, fnCallback)
-        }, 200);
-      }
-      // text finished, call callback if there is a callback function
-      else if (typeof fnCallback == 'function') {
-        // call callback after timeout
-        setTimeout(fnCallback, 800);
-      }
-    }
-    // start a typewriter animation for a text in the dataText array
-     function StartTextAnimation(i) {
-       if (typeof dataText[i] == 'undefined'){
-          setTimeout(function() {
-            StartTextAnimation(0);
-          }, 1000);
-       }
-       // check if dataText[i] exists
-      if (i < dataText[i].length) {
-        // text exists! start typewriter animation
-       typeWriter(dataText[i], 0, function(){
-         // after callback (and whole text has been animated), start next text
-         StartTextAnimation(i + 1);
-       });
-      }
-  
-    }
-    // start the text animation
-    StartTextAnimation(0);
-
-
-    // initialize splide
-    new Splide( '.splide', {
-        type    : 'loop',
-        perPage : 3,
-        autoplay: true,
-        lazyLoad: 'nearby',
-        controls: 'false',
-        arrow: 'false',
-        pagination: 'false',
-    } ).mount();
+document.addEventListener('DOMContentLoaded', function (event) {
+  // initialize swiper js
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cube",
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
   });
+  // array with texts to type in typewriter
+  var dataText = ["SANDAN DEVELOPERS ...", "What do we Deal in?", "We deal with Web Design", "Mobile Development", "Graphic Design", "Photography", "and Event Management", "For any business and queries you can call or whatsapp us today via:", "+254 704 035262 or +254 768 286185", "Or get in touch with us via email through", "sandandevelopers@gmail.com"];
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+      document.querySelector("#tw").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function () {
+        typeWriter(text, i + 1, fnCallback)
+      }, 200);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 800);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+  function StartTextAnimation(i) {
+    if (typeof dataText[i] == 'undefined') {
+      setTimeout(function () {
+        StartTextAnimation(0);
+      }, 1000);
+    }
+    // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+      typeWriter(dataText[i], 0, function () {
+        // after callback (and whole text has been animated), start next text
+        StartTextAnimation(i + 1);
+      });
+    }
+
+  }
+  // start the text animation
+  StartTextAnimation(0);
+
+
+  // initialize splide
+  new Splide('.splide', {
+    type: 'loop',
+    perPage: 3,
+    autoplay: true,
+    lazyLoad: 'nearby',
+    controls: 'false',
+    arrow: 'false',
+    pagination: 'false',
+  }).mount();
+});

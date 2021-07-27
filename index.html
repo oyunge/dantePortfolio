@@ -3,12 +3,20 @@
   <head>
     <meta name="viewport" content="width=device-width, initail-scale=1.0" />
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon-32x32.png"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Assets/css/font-awesome.min.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -29,13 +37,21 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <!-- Splide css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Sandan Developers</title>
     <link rel="stylesheet" href="Assets/css/style.css" />
     <link rel="stylesheet" href="Assets/css/queries.css" />
   </head>
   <body>
+    <!-- START OF WHATSAPP CHAT -->
+    <a href="https://wa.me/254768286185" class="whatsapp_float" target="_blank">
+      <i class="fa fa-whatsapp whatsapp-float-icon"></i
+    ></a>
+    <!-- END OF WHATSAPP CHAT -->
     <div class="container">
       <!-- START OF NAVBAR SECTION -->
       <section id="mynavbar">
@@ -56,7 +72,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-           <img src="Assets/img/menu-icon.png" class="img-fluid">
+            <img src="Assets/img/menu-icon.png" class="img-fluid" />
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -90,8 +106,7 @@
           </div>
           <div class="col-md-4 order-md-first">
             <div class="landing-text">
-            <img src="assets/img/landing-page-logo.png" class="img-fluid">
-
+              <img src="assets/img/landing-page-logo.png" class="img-fluid" />
             </div>
           </div>
         </div>
@@ -100,29 +115,339 @@
       <!-- START OF INTRO TO SANDAN -->
       <section id="about-us">
         <div class="about-us-body">
-          <h1>Introduction</h1>
-          <p><b>Sandan Developers</b> is group of young talented software developers who are determined to solve problems and challenges posed to businesses and people within the society using technology. We aim to help businesses experience Digital Innovation in their premises. This is a movement and has helped us as youth avoid peer pressure,idleness and crime.We aim at registering <b></b> as a full IT firm, hiring more talented youths and becoming a powerhouse in the It industry in Africa.</p>
-        <h3>What Do we Do?</h3>
-        <p>Currently, We specialize in Webdesign and creation of websites, Mobile App Development (both Android & IOS),Graphic Design, Photography & Event Management. </p>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">Slide 01</li>
-                <li class="splide__slide">Slide 02</li>
-                <li class="splide__slide">Slide 03</li>
-              </ul>
+          <h1 class="title">Introduction</h1>
+          <p>
+            <b>Sandan Developers</b> is group of young talented software
+            developers who are determined to solve problems and challenges posed
+            to businesses and people within the society using technology. We aim
+            to help businesses experience Digital Innovation in their premises.
+            This is a movement and has helped us as youth avoid peer
+            pressure,idleness and crime.We aim at registering <b></b> as a full
+            IT firm, hiring more talented youths and becoming a powerhouse in
+            the It industry in Africa.
+          </p>
+        </div>
+        <div class="row justify-content-center" id="our-skills">
+          <h1 class="title mt-4">What Do we Do?</h1>
+          <p class="text-center">
+            Currently, We specialize in Webdesign and creation of websites,
+            Mobile App Development (both Android & IOS),Graphic Design,
+            Photography & Event Management.
+          </p>
+          <div class="col-md-3">
+            <div class="mycard">
+              <div class="mycard-title">Web Design</div>
+              <div class="mycard-text">
+                Web design refers to the design of websites that are displayed
+                on the internet.
+              </div>
+              <div class="mycard-footer">
+                <button class="btn">View Pricing</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mycard">
+              <div class="mycard-title">Mobile App Development</div>
+              <div class="mycard-text">
+                Mobile app development is the act or process by which a mobile
+                app is developed for mobile devices.
+              </div>
+              <div class="mycard-footer">
+                <button class="btn">View Pricing</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mycard">
+              <div class="mycard-title">Graphic Design</div>
+              <div class="mycard-text">
+                This can be designing and brochures, logos, signs, books,
+                magazine covers, annual reports, advertisements, and other
+                communication materials.
+              </div>
+              <div class="mycard-footer">
+                <button class="btn">View Price</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mycard">
+              <div class="mycard-title">Photography</div>
+              <div class="mycard-text">
+                Taking professional pictures to document special memories on all
+                occasions be it official or unofficial events. These even
+              </div>
+              <div class="mycard-footer">
+                <button class="btn">View Pricing</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mycard">
+              <div class="mycard-title">Event Management</div>
+              <div class="mycard-text">
+                We are able to take up a small and/or large-scale personal or
+                corporate events such as weddings,parties, concerts, or
+                conventions and ensure its success
+              </div>
+              <div class="mycard-footer">
+                <button class="btn">View More</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>  
-      </div>
       </section>
       <!-- END OF INTRO TO SANDAN -->
+      <!-- WHY CHOOSE SANDAN DEVELOPERS -->
+      <section id="why-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="why-sandan-box">
+                <h1 class="title">Why Choose Sandan Developers ?</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore id, fuga maxime doloribus labore incidunt, ratione qui
+                  ea reiciendis totam voluptatum. In soluta ipsa incidunt
+                  laborum aliquid rerum, possimus cupiditate alias impedit
+                  veritatis illo quod, nam similique vitae voluptatum officia!
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img src="Assets/img/choose-sandan.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END WHY CHOOSE SANDAN DEVELOPERS -->
+      <!-- START OF OUR PRICING  -->
+      <section id="our-pricing">
+        <div class="row justify-content-center" id="our-skills">
+          <h1 class="title mt-4">OUR PRICING</h1>
+          <p class="text-center">
+            All services provided have different pricing plans and increase with
+            the job complexity.
+          </p>
+
+          <!-- Pricing Table-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="bg-white rounded-lg shadow pricing-card">
+              <h1
+                class="h6 price-card-title text-uppercase font-weight-bold mb-4"
+              >
+                SANDAN DEVELOPERS
+              </h1>
+              <h2 class="h1 font-weight-bold">Pricing</h2>
+
+              <div class="custom-separator my-4 mx-auto my-bg-color"></div>
+
+              <ul class="list-unstyled my-5 text-small">
+                <li class="mb-3">
+                  Website Prices -
+                  <span class="price-text">USD 509.90 - USD 1,000</span>
+                </li>
+                <li class="mb-3">
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Graphic Design -
+                  <span class="price-text">USD 5 - USD 250</span>
+                </li>
+                <li class="mb-3">
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Mobile App Development -
+                  <span class="price-text">Negotiation Based</span>
+                </li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2"></i>
+                  Photography -
+                  <span class="price-text">USD 1.50 - USD 250</span>
+                </li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2"></i>
+                  Event Management -
+                  <span class="price-text">Negotiation Based</span>
+                </li>
+              </ul>
+              <button href="#" class="btn my-bg-color">START NOW!</button>
+            </div>
+          </div>
+          <!-- END -->
+        </div>
+      </section>
+      <!-- END OF OUR PRICING  -->
+      <!-- START OF PREVIOUS WORKS -->
+      <section id="our-pricing">
+        <div class="row justify-content-center" id="our-skills">
+          <h1 class="title mt-4">OUR WORKS</h1>
+          <p class="text-center">
+            Within the cube below are some of the works that we have built.Flip
+            through to see all.
+          </p>
+          <!-- Swiper -->
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="Assets/img/logo.png" class="img-fluid" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/img/website1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/img/website2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/img/website3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/img/website4.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/img/website5.png" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Swiper JS -->
+        </div>
+      </section>
+      <!-- END OF PREVIOUS WORKS -->
+      <!-- START OF CONTACT US SECTION -->
+      <section id="contact-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="text-left">
+                <div class="col-md-7">
+                  <h1 class="title">
+                    Start Boosting your Business with us today.
+                  </h1>
+                </div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Incidunt eum porro aut? Dolorem qui reiciendis maiores
+                  blanditiis debitis, tempore quia, asperiores natus sequi odio
+                  adipisci.
+                </p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Incidunt eum porro aut? Dolorem qui reiciendis maiores
+                  blanditiis debitis, tempore quia, asperiores natus sequi odio
+                  adipisci.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <form action="#" id="contact-us-form">
+                <div class="input-group">
+                  <input type="text" name="name" placeholder="Name" />
+                  <input type="email" name="email" placeholder="Email" />
+                  <input type="tel" name="tel" placeholder="Contact Number" />
+                  <textarea
+                    name="message"
+                    id=""
+                    cols="30"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                  <button
+                    class="
+                      btn
+                      text-white
+                      my-3
+                      font-weight-bold
+                      mx-auto
+                      btn-long
+                    "
+                  >
+                    Submit Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- START OF FOOTER SECTION -->
+        <footer id="footer-section">
+          <div class="row">
+            <div class="col-md-5">
+              <a class="footer-brand" href="#"
+                ><img src="Assets/img/logo-nobg.png" class="img-fluid"
+              /></a>
+              <h6 class="font-weight-bold my-3">Connect With Us</h6>
+              <ul class="social-buttons">
+                <li>
+                  <a href="#" class="social-btn"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-btn"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-btn"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-btn"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 text-right">
+              <h6 class="sm-title">Quick Links</h6>
+              <ul class="quick-links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Works</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-right">
+              <h6 class="sm-title">Quick Contact</h6>
+              <ul class="quick-links">
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-phone"></i> +254 704 035262/+254 768 286185
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-envelope"></i> sandandevelopers@gmail.com
+                  </a>
+                </li>
+                <li><a href="#">Nairobi Kenya</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </section>
+      <!-- START OF COPYRIGHT SECTION -->
+
+      <div id="copyright-text" class="bg-blue">
+        <div class="container">
+          <div class="copyright-container">
+            <div class="float-left">
+              <p>
+                Copyright &copy; 2021 SANDAN DEVELOPERS. All Rights Reserved.
+                Built by Sandan Developers.
+              </p>
+            </div>
+            <div class="float-right">
+              <p>Privacy Policy | Terms</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- slide scroller -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

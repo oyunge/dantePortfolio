@@ -1,9 +1,10 @@
 :root {
   --primary-color: #ffa31a;
   --secondary-color: #fff;
-  --txt-red: #FF0000;
+  --txt-red: #ff0000;
   --bg-primary-color: #000;
   --parag--color: #fff;
+  --grey-color: #ccc;
 }
 *,
 a,
@@ -15,8 +16,10 @@ a,
   text-decoration: none;
   color: var(--parag--color);
 }
-button:checked,button,.btn:focus{
-    box-shadow: none !important;
+button:checked,
+button,
+.btn:focus {
+  box-shadow: none !important;
 }
 h1,
 h2,
@@ -33,15 +36,15 @@ div {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
-p b{
-color: var(--txt-red);
+p b {
+  color: var(--txt-red);
 }
 body {
   scroll-behavior: smooth;
   background-color: var(--bg-primary-color);
 }
-section{
-    min-height: 100vh;
+section {
+  min-height: 40vh;
 }
 /* START OF NAVBAR SECTION */
 #mynavbar .navbar-nav .nav-link {
@@ -82,3 +85,242 @@ section{
 }
 /* end of logo animation */
 /* END OF NAVBAR SECTION */
+/* START OF SKILLS SET CARDS */
+#our-skills {
+  margin: 70px 0;
+}
+#our-skills h1.title {
+  text-align: center;
+}
+.mycard {
+  background-color: var(--secondary-color);
+  border-radius: 5%;
+  padding: 20px 10px;
+  min-height: 300px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: all 3s ease-in-out;
+  margin-top: 30px;
+}
+.mycard .mycard-title,
+.mycard .mycard-text {
+  color: var(--bg-primary-color);
+}
+.mycard .mycard-title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.mycard .mycard-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.mycard .mycard-footer {
+  text-align: center;
+}
+.mycard .mycard-footer button {
+  background-color: var(--primary-color);
+  margin: 20px 0;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  color: var(--secondary-color);
+}
+.mycard:hover {
+  top: -5%;
+}
+.mycard:hover .mycard-title {
+  color: #000;
+}
+h1.title {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+/* END OF SKILLS SET CARDS */
+/* START OF PRICING CARDS */
+.pricing-card {
+  padding: 20px 15px;
+}
+.pricing-card * {
+  color: var(--bg-primary-color);
+}
+.pricing-card .list-unstyled * {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.pricing-card h1,
+.pricing-card h2 {
+  text-align: center;
+}
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+.custom-separator {
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.2em;
+}
+.my-bg-color {
+  background-color: var(--primary-color);
+}
+span.price-text {
+  color: green;
+}
+.pricing-card button {
+  color: white;
+  font-weight: bold;
+}
+.pricing-card:hover .price-card-title {
+  font-weight: bold;
+}
+
+/* END OF PRICING CARDS */
+/* START OF PREVIOUS WORKS SECTION */
+.swiper-container {
+  width: 600px;
+  height: auto;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: var(--primary-color);
+}
+/* END OF PREVIOUS WORKS SECTION */
+
+/* START OF CONTACT US FORM SECTION */
+#contact-us-form .input-group {
+  margin: 0px 0 24px;
+}
+#contact-us-form .input-group * {
+  margin: auto;
+  display: block;
+  width: 90%;
+  margin-bottom: 25px;
+}
+#contact-us-form button {
+  background-color: var(--primary-color);
+  color: var(--parag--color);
+}
+#contact-us-form .input-group input,
+#contact-us-form .input-group textarea {
+  background-color: var(--parag--color);
+  border: none;
+  padding: 15px;
+}
+#contact-us-form .input-group input::placeholder,
+#contact-us-form .input-group textarea::placeholder {
+  padding-left: 3px;
+  color: #999999;
+}
+/* END OF CONTACT US FORM SECTION */
+
+/* START OF FOOTER SECTION */
+
+ul.social-buttons {
+  list-style: none;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  height: 100px;
+}
+
+ul.social-buttons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul.social-buttons li:last-child {
+  margin-right: 0;
+}
+
+.social-btn i {
+  font-size: 2.3em;
+}
+.social-btn i:hover,
+.social-btn i:focus {
+  margin-top: -5px;
+}
+#footer-section .row {
+  margin: 57px 0;
+}
+#footer-section .sm-title {
+  color: var(--parag--color);
+  font-size: 15px;
+}
+.quick-links li {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.quick-links {
+  margin-bottom: 51px;
+}
+.quick-links li a {
+  color: var(--parag--color);
+}
+.quick-links li a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/* END OF FOOTER SECTION */
+/* START OF COPYRIGHT TEXT SECTION */
+.copyright-container {
+  margin: 10px 0 0;
+  padding: 15px 0 10px;
+}
+.copyright-container p {
+  color: var(--parag--color);
+  font-size: 1em;
+  font-weight: 100;
+  font-kerning: 10px;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+/* END OF COPYRIGHT TEXT SECTION */
+/* START OF WHATSAPP CHAT FEATURE */
+/* WHATSAPP FLOAT ICON */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float-icon {
+  margin-top: 16px;
+}
+/*
+/* END OF WHATSAPP CHAT FEATURE */

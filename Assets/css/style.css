@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #ffa31a;
+  --secondary-color: #fff;
+  --txt-red: #FF0000;
+  --bg-primary-color: #000;
+  --parag--color: #fff;
+}
+*,
+a,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--parag--color);
+}
+button:checked,button,.btn:focus{
+    box-shadow: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+p,
+span,
+div {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+p b{
+color: var(--txt-red);
+}
+body {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary-color);
+}
+section{
+    min-height: 100vh;
+}
+/* START OF NAVBAR SECTION */
+#mynavbar .navbar-nav .nav-link {
+  color: var(--parag--color);
+  font-size: 15px;
+}
+#mynavbar .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: all 1s;
+}
+.landing-text {
+  position: relative;
+  top: 35%;
+}
+.landing-text h1 {
+  font-weight: bolder;
+}
+.landing-text p {
+  color: var(--primary-color);
+}
+/* start of logo animation */
+.loader h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.loader h4 em {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+.loader .c-braces {
+  letter-spacing: -8px;
+  vertical-align: middle;
+}
+/* end of logo animation */
+/* END OF NAVBAR SECTION */
